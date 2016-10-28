@@ -1,0 +1,12 @@
+#!/bin/sh
+
+#PBS -l walltime=72:00:00
+#PBS -l	pcput=71:00:00
+#PBS -N mtop_1.0
+
+cp $HOME/magnetic_jtoj/1.0_temp/mtop.out ./
+
+./mtop.out > ./output_mtop.txt
+
+cp  ./* $HOME/magnetic_jtoj/1.0_temp/
+

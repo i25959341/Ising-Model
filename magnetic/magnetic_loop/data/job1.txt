@@ -1,0 +1,12 @@
+#!/bin/sh
+
+#PBS -l walltime=72:00:00
+#PBS -l	pcput=71:00:00
+#PBS -N ising_mag
+
+cp $HOME/ising_magnetic/a.out ./
+
+./a.out > ./output_magnetic_ising.txt
+
+cp  ./* $HOME/ising_magnetic/
+
